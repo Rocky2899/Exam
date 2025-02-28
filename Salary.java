@@ -15,4 +15,12 @@ public class Salary
      * taxes/deductions = 30% of total salary
      * net pay = total salary - taxes/deductions
      */
-}
+    public void getSalary ( double hourlyHours, double hourlyWage){
+        double totalSalary = hourlyHours * hourlyWage;
+        double taxDeductions = totalSalary * 0.3;
+        double netPay = totalSalary - taxDeductions;
+        
+        System.out.println(netPay);
+    }
+}   
+
